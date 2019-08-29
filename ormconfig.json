@@ -1,0 +1,23 @@
+{
+  "url": "postgres://ovbzhgitcpchff:3d88b217e297d5c336314c10c52a1b2552485b620826a384abfba0f83fba94b8@ec2-54-83-9-36.compute-1.amazonaws.com:5432/d7ieklq3t7q87e",
+  "type": "postgres",
+  "host": "localhost",
+  "username": "postgres",
+  "password": "1",
+  "database": "linechat",
+  "synchronize": false,
+  "entities": [
+    "src/entity/*.js"
+  ],
+  "subscribers": [
+    "src/subscriber/*.js"
+  ],
+  "migrations": [
+    "src/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
